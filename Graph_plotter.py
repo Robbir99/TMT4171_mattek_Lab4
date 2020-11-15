@@ -26,8 +26,10 @@ for c1, c2 in cells_varmebehandlet:
     Charpy_results_varmebehandlet[1].append(c2.value)
 
 
-plt.plot(Charpy_results[0], Charpy_results[1],"bo", label = 'Ikke varmebehandlet')
-plt.plot(Charpy_results_varmebehandlet[0], Charpy_results_varmebehandlet[1], 'ro', label = 'varmebehandlet')
+plt.plot(Charpy_results[0], Charpy_results[1],"bo", \
+label = 'Ikke varmebehandlet')
+plt.plot(Charpy_results_varmebehandlet[0], Charpy_results_varmebehandlet[1], \
+'ro', label = 'varmebehandlet')
 plt.xlabel("Temperatur")
 plt.ylabel("Joule")
 plt.grid()
