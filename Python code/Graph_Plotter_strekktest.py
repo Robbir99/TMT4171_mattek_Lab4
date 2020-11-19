@@ -38,50 +38,9 @@ class Strekktest:
 
 
 
-
-
-
-a = Strekktest('A7', 'F576', 'strekking nov 2020_1.xlsx', '1b')
-a.plot_data(0,1,'x-akse','y-akse')
-plt.show()
-#print(spec_1[0])
-#print(a.get_data()[0])
-#print(spec_1[0][0].value)
-"""
-#[[Load(kN)], [Stress(MPa)],[Displacement (mm)], [Strain (mm/mm)], [Strain (%)] ]
-Strekktest_spec1 = [[],[],[],[],[]]
-Strekktest_spec15 = [[],[],[],[],[]]
-
-# Setting the path to the xlsx file:
-xlsx_file =  'strekking nov 2020_1.xlsx'
-
-book = openpyxl.load_workbook(xlsx_file)
-
-sheet_1a = book.get_sheet_by_name("1b")
-
-cells = sheet_1a['A7': 'F1238']
-
-
-
-for c1, c2 in cells:
-    #print("{0:8} {1:8}".format(c1.value, c2.value))
-    Charpy_results[0].append(c1.value)
-    Charpy_results[1].append(c2.value)
-
-cells_varmebehandlet = sheet['D2': "E12"]
-for c1, c2 in cells_varmebehandlet:
-    print("{0:8} {1:8}".format(c1.value, c2.value))
-    Charpy_results_varmebehandlet[0].append(c1.value)
-    Charpy_results_varmebehandlet[1].append(c2.value)
-
-
-plt.plot(Charpy_results[0], Charpy_results[1],"bo", \
-label = 'Ikke varmebehandlet')
-plt.plot(Charpy_results_varmebehandlet[0], Charpy_results_varmebehandlet[1], \
-'ro', label = 'varmebehandlet')
-plt.xlabel("Temperatur")
-plt.ylabel("Joule")
-plt.grid()
-plt.legend()
-plt.show()
-"""
+specimen_nr1 = Strekktest('A7', 'F576', 'strekking nov 2020_1.xlsx', '1b')
+specimen_nr4 = Strekktest('A585', 'F1274', 'strekking nov 2020_1.xlsx', '1b')
+specimen_nr5 = Strekktest('A1284', 'F1772', 'strekking nov 2020_1.xlsx', '1b')
+specimen_nr1.plot_data(3,2,'Tøyning [mm]','Spenning [MPa]')
+#specimen_nr4.plot_data(0,1,'x-akse','y-akse')
+#specimen_nr5.plot_data(0,1,'x-akse','y-akse')
