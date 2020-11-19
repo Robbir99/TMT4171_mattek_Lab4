@@ -1,7 +1,9 @@
 import openpyxl
-from pathlib import Path
 import matplotlib.pyplot as plt
-
+"""
+Leser informasjonen fra excel filen 'Charpytest_resultater.xlsx',
+og lager et plott med dataen.
+"""
 Charpy_results = [[],[]] #[[temp], [joule]]
 Charpy_results_varmebehandlet = [[],[]] #[[temp], [joule]]
 
