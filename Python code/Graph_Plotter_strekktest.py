@@ -28,6 +28,7 @@ class Strekktest:
         # (get_data()[x], get_data()[y])
         list_data = self.get_data()
         plt.plot(list_data[x], list_data[y], label = label_name)
+        plt.legend()
         plt.xlabel(x_label)
         plt.ylabel(y_label)
 
