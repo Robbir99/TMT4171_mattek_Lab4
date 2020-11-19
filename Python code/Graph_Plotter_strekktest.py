@@ -23,7 +23,7 @@ class Strekktest:
 
         return data_results
 
-    def plot_data(self, x, y, x_label, y_label, show_grid = True, show_graph = False):
+    def plot_data(self, x, y, x_label, y_label, show_grid = True, show_graph = True):
         #tar listen fra get_data(), og plotter grafen med punktene gitt av posisjonene
         # (get_data()[x], get_data()[y])
         list_data = self.get_data()
@@ -42,5 +42,5 @@ specimen_nr1 = Strekktest('A7', 'F576', 'strekking nov 2020_1.xlsx', '1b')
 specimen_nr4 = Strekktest('A585', 'F1274', 'strekking nov 2020_1.xlsx', '1b')
 specimen_nr5 = Strekktest('A1284', 'F1772', 'strekking nov 2020_1.xlsx', '1b')
 specimen_nr1.plot_data(3,2,'Tøyning [mm]','Spenning [MPa]')
-#specimen_nr4.plot_data(0,1,'x-akse','y-akse')
-#specimen_nr5.plot_data(0,1,'x-akse','y-akse')
+specimen_nr4.plot_data(3,2,'Tøyning [mm]','Spenning [MPa]')
+specimen_nr5.plot_data(3,2,'Tøyning [mm]','Spenning [MPa]')
