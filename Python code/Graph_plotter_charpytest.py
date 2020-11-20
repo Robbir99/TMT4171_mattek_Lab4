@@ -32,8 +32,8 @@ plt.plot(Charpy_results[0], Charpy_results[1],"bo", \
 label = 'Ikke varmebehandlet')
 plt.plot(Charpy_results_varmebehandlet[0], Charpy_results_varmebehandlet[1], \
 'ro', label = 'varmebehandlet')
-plt.xlabel("Temperatur")
-plt.ylabel("Joule")
+plt.xlabel("Temperatur [C]")
+plt.ylabel("Energi [J]")
 plt.grid()
 plt.legend()
 plt.show()
