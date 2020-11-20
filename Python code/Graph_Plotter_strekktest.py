@@ -47,12 +47,3 @@ specimen_nr1.plot_data(4,2, 'Tøyning [mm]','Spenning [MPa]', 'specimen_nr1')
 specimen_nr4.plot_data(4,2,'Tøyning [mm]','Spenning [MPa]', 'specimen_nr4')
 specimen_nr5.plot_data(4,2,'Tøyning [mm]','Spenning [MPa]', 'specimen_nr5')
 plt.show()
-
-a = specimen_nr1.get_data()
-print(a[4][10])
-print(a[4][30])
-print(a[2][10])
-print(a[2][30])
-dy = (a[2][30] - a[2][10])*10
-dx = (a[4][30] - a[4][10])*10
-print(dy/dx)
